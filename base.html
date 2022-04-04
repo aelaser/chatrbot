@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Design for Tension</title>
+</head>
+
+<body>
+        
+    <div class= "main-containter">
+    <!--------------- Scroll right --------------->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    
+    <!--------------- Header --------------->
+    <header class="l-header " id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Design for Tension</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <div class="main_list">
+                        
+                    </div>
+                    <li class="nav__item"><a href="/" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="/reference" class="nav__link">References</a></li>
+                    <li class="nav__item"><a href="/base" class="nav__link">Join the conversation</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-right' ></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--------------- Home --------------->
+        <!-- <section class="home" id="home">
+            <div class="home__container search_box bd-container bd-grid "> -->
+
+        <section class="home section" id="home">
+            <div class="home__container bd-container">
+                <div class="home__data">
+                <h1 class="section-title" style="margin-top: 1rem; margin-bottom: 1rem;">What's up?</h1>
+                </div>
+                
+            </div>
+            <div class="bd-container">
+                <!-- <div class="container"> -->
+                    <div class="chatbox">
+                        <div class="chatbox__support">
+                            <div class="chatbox__header">
+                                <div class="chatbox__image--header">
+                                    <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-5--v1.png" alt="image">
+                                </div>
+                                <div class="chatbox__content--header">
+                                    <h4 class="chatbox__heading--header">Robot Gun</h4>
+                                    <p class="chatbox__description--header">Hi. My name is GunControl RObot. How can I help you?</p>
+                                </div>
+                            </div>
+                            <div class="chatbox__messages">
+                                <div></div>
+                            </div>
+                            <div class="chatbox__footer">
+                                <input type="text" placeholder="Write a message...">
+                                <button class="chatbox__send--footer send__button">Send</button>
+                            </div>
+                        </div>
+                        <div class="chatbox__button">
+                        </div>
+                    </div>
+                <!-- </div>                        -->
+                </div>
+                
+            </div>
+        </section>
+
+       
+
+    </main>
+</div>
+        
+
+    <!--------------- Footer --------------->
+    <!--========== FOOTER ==========-->
+    <footer class="footer ">
+        <p class="footer__copy">Made with love by group #10</p>
+    </footer>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
