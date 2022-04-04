@@ -1,0 +1,67 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello! It's nice to meet you! We had a few questions to ask you, type Yes, if you are ready to get started?"
+      ]
+    },
+    {
+      "tag": "agree",
+      "patterns": ["Yes", "yes"],
+      "responses": [
+        "Awesome! First, where are you from?"
+
+      ]
+    },
+
+    {
+      "tag": "country",
+      "patterns": ["US", "United States"],
+      "responses": [
+        "Have you heard of the gun control issues in the US?"
+
+      ]
+    },
+
+    {
+      "tag": "heard",
+      "patterns": ["I", "heard", "issues"],
+      "responses": [
+        "Do you feel comfortable talking about guns and gun control?"
+
+      ]
+    },
+    {
+      "tag": "disagree",
+      "patterns": ["no","Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    }
+  ]
+}
